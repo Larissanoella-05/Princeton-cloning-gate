@@ -255,17 +255,8 @@
   .mt-auto {
     margin-top: auto;
   }
-  .mr-\[\%\] {
-    margin-right: %;
-  }
   .mr-\[5\%\] {
     margin-right: 5%;
-  }
-  .mr-\[10\%\] {
-    margin-right: 10%;
-  }
-  .mr-\[10\] {
-    margin-right: 10;
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -349,23 +340,8 @@
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
-  .h-\[50\%\] {
-    height: 50%;
-  }
-  .h-\[50\] {
-    height: 50;
-  }
   .h-\[60vh\] {
     height: 60vh;
-  }
-  .h-\[80\%\] {
-    height: 80%;
-  }
-  .h-\[120\%\] {
-    height: 120%;
-  }
-  .h-\[120px\] {
-    height: 120px;
   }
   .h-auto {
     height: auto;
@@ -382,26 +358,20 @@
   .w-50 {
     width: calc(var(--spacing) * 50);
   }
-  .w-\[0\%\] {
-    width: 0%;
-  }
   .w-\[40\%\] {
     width: 40%;
-  }
-  .w-\[40\] {
-    width: 40;
   }
   .w-\[50\%\] {
     width: 50%;
   }
-  .w-\[50\@\] {
-    width: 50@;
-  }
-  .w-\[50\] {
-    width: 50;
-  }
   .w-full {
     width: 100%;
+  }
+  .w-max {
+    width: max-content;
+  }
+  .w-screen {
+    width: 100vw;
   }
   .max-w-6xl {
     max-width: var(--container-6xl);
@@ -499,12 +469,6 @@
   }
   .border-b-orange-400 {
     border-bottom-color: var(--color-orange-400);
-  }
-  .bg-\[https\:\/\/www\.princeton\.edu\/sites\/default\/files\/styles\/full_2x_crop\/public\/images\/2025\/02\/20250222_AlumniDay_022225_1016_WEB_2\.jpeg\?itok\=lgpdqeSw\] {
-    background-color: //www.princeton.edu/sites/default/files/styles/full 2x crop/public/images/2025/02/20250222 AlumniDay 022225 1016 WEB 2.jpeg?itok=lgpdqeSw;
-  }
-  .bg-\[urlhttps\:\/\/www\.princeton\.edu\/sites\/default\/files\/styles\/full_2x_crop\/public\/images\/2025\/02\/20250222_AlumniDay_022225_1016_WEB_2\.jpeg\?itok\=lgpdqeSw\] {
-    background-color: //www.princeton.edu/sites/default/files/styles/full 2x crop/public/images/2025/02/20250222 AlumniDay 022225 1016 WEB 2.jpeg?itok=lgpdqeSw;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -650,11 +614,6 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .md\:h-7\/12 {
-    @media (width >= 48rem) {
-      height: calc(7/12 * 100%);
-    }
-  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
@@ -670,36 +629,6 @@
       width: calc(3/5 * 100%);
     }
   }
-  .md\:w-3\/12 {
-    @media (width >= 48rem) {
-      width: calc(3/12 * 100%);
-    }
-  }
-  .md\:w-5\/12 {
-    @media (width >= 48rem) {
-      width: calc(5/12 * 100%);
-    }
-  }
-  .md\:w-7\/12 {
-    @media (width >= 48rem) {
-      width: calc(7/12 * 100%);
-    }
-  }
-  .md\:w-8\/12 {
-    @media (width >= 48rem) {
-      width: calc(8/12 * 100%);
-    }
-  }
-  .md\:w-11\/12 {
-    @media (width >= 48rem) {
-      width: calc(11/12 * 100%);
-    }
-  }
-  .md\:grid-cols-2 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -708,26 +637,6 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
-    }
-  }
-  .md\:p-12 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:p-20 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:p-30 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 30);
-    }
-  }
-  .lg\:p-16 {
-    @media (width >= 64rem) {
-      padding: calc(var(--spacing) * 16);
     }
   }
 }
