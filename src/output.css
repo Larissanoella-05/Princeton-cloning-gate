@@ -6,8 +6,14 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-orange-100: oklch(0.954 0.038 75.164);
+    --color-orange-200: oklch(0.901 0.076 70.697);
+    --color-orange-300: oklch(0.837 0.128 66.29);
+    --color-orange-400: oklch(0.75 0.183 55.934);
     --color-orange-500: oklch(0.705 0.213 47.604);
+    --color-amber-50: oklch(0.987 0.022 95.277);
     --color-gray-300: oklch(0.872 0.01 258.338);
+    --color-gray-400: oklch(0.707 0.022 261.325);
     --color-gray-900: oklch(0.21 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
@@ -236,6 +242,14 @@
   .table {
     display: table;
   }
+  .size-2 {
+    width: calc(var(--spacing) * 2);
+    height: calc(var(--spacing) * 2);
+  }
+  .size-5 {
+    width: calc(var(--spacing) * 5);
+    height: calc(var(--spacing) * 5);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -244,6 +258,18 @@
   }
   .h-auto {
     height: auto;
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[50\@\] {
+    width: 50@;
+  }
+  .w-\[50\] {
+    width: 50;
   }
   .w-full {
     width: 100%;
@@ -302,14 +328,36 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-b-50 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 50px;
+  }
+  .border-amber-50 {
+    border-color: var(--color-amber-50);
+  }
+  .border-gray-400 {
+    border-color: var(--color-gray-400);
+  }
   .border-orange-500 {
     border-color: var(--color-orange-500);
   }
-  .bg-\[https\:\/\/www\.princeton\.edu\/sites\/default\/files\/styles\/full_2x_crop\/public\/images\/2025\/02\/20250222_AlumniDay_022225_1016_WEB_2\.jpeg\?itok\=lgpdqeSw\] {
-    background-color: //www.princeton.edu/sites/default/files/styles/full 2x crop/public/images/2025/02/20250222 AlumniDay 022225 1016 WEB 2.jpeg?itok=lgpdqeSw;
+  .border-b-amber-50 {
+    border-bottom-color: var(--color-amber-50);
   }
-  .bg-\[urlhttps\:\/\/www\.princeton\.edu\/sites\/default\/files\/styles\/full_2x_crop\/public\/images\/2025\/02\/20250222_AlumniDay_022225_1016_WEB_2\.jpeg\?itok\=lgpdqeSw\] {
-    background-color: //www.princeton.edu/sites/default/files/styles/full 2x crop/public/images/2025/02/20250222 AlumniDay 022225 1016 WEB 2.jpeg?itok=lgpdqeSw;
+  .border-b-black {
+    border-bottom-color: var(--color-black);
+  }
+  .border-b-orange-100 {
+    border-bottom-color: var(--color-orange-100);
+  }
+  .border-b-orange-200 {
+    border-bottom-color: var(--color-orange-200);
+  }
+  .border-b-orange-300 {
+    border-bottom-color: var(--color-orange-300);
+  }
+  .border-b-orange-400 {
+    border-bottom-color: var(--color-orange-400);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -381,18 +429,56 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .md\:w-1\/2 {
+  .md\:grid-cols-2 {
     @media (width >= 48rem) {
-      width: calc(1/2 * 100%);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .md\:w-2\/5 {
-    @media (width >= 48rem) {
-      width: calc(2/5 * 100%);
-    }
-  }
-  .md\:w-3\/5 {
-    @media (width >= 48rem) {
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
       width: calc(3/5 * 100%);
     }
   }
