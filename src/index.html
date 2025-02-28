@@ -6,7 +6,29 @@
     <link href="./output.css" rel="stylesheet">
     <title>Princeton University News</title>
     </head>
-<body>
-    <h1>Hello World</h1>
+<body class="bg-black text-white">
+        <header class="bg-black text-white p-4 flex justify-between items-center border-b border-orange-500">
+            <div class="flex items-center space-x-4">
+                <button class="text-white text-2xl">☰</button>
+                <img src="https://www.princeton.edu/themes/custom/princeton/logo.svg" alt="Princeton Logo" class="h-8">
+            </div>
+            <button class="text-white text-2xl">🔍</button>
+        </header>
+        <main class="p-6">
+            <section class="hero bg-cover bg-center h-[60vh] flex flex-col justify-center p-8" style="background-image: url('https://www.princeton.edu/sites/default/files/styles/16_9_xl/public/news-images/2024/02/2024-alumni-day-stage-justices-card.jpg');">
+                <h2 class="text-4xl font-bold">U.S. Supreme Court Justice Elena Kagan, Nobel laureate David Card recognized at Princeton Alumni Day</h2>
+                <p class="mt-2 text-lg">The 110th Alumni Day program underscored the University’s commitment to serving the nation and humanity.</p>
+            </section>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-gray-900 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold">The partnership that drives America’s leadership in medical discovery</h3>
+                    <p class="mt-2">How it works and what’s at stake.</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold">Dean of Engineering Andrea Goldsmith to become president of Stony Brook University</h3>
+                </div>
+            </section>
+        </main>
 </body>
+      
 </html>
