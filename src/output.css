@@ -259,11 +259,20 @@
   .border-orange-500 {
     border-color: var(--color-orange-500);
   }
+  .bg-\[https\:\/\/www\.princeton\.edu\/sites\/default\/files\/styles\/full_2x_crop\/public\/images\/2025\/02\/20250222_AlumniDay_022225_1016_WEB_2\.jpeg\?itok\=lgpdqeSw\] {
+    background-color: //www.princeton.edu/sites/default/files/styles/full 2x crop/public/images/2025/02/20250222 AlumniDay 022225 1016 WEB 2.jpeg?itok=lgpdqeSw;
+  }
+  .bg-\[urlhttps\:\/\/www\.princeton\.edu\/sites\/default\/files\/styles\/full_2x_crop\/public\/images\/2025\/02\/20250222_AlumniDay_022225_1016_WEB_2\.jpeg\?itok\=lgpdqeSw\] {
+    background-color: //www.princeton.edu/sites/default/files/styles/full 2x crop/public/images/2025/02/20250222 AlumniDay 022225 1016 WEB 2.jpeg?itok=lgpdqeSw;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
+  }
+  .bg-\[url\(https\:\/\/www\.princeton\.edu\/sites\/default\/files\/styles\/full_2x_crop\/public\/images\/2025\/02\/20250222_AlumniDay_022225_1016_WEB_2\.jpeg\?itok\=lgpdqeSw\)\] {
+    background-image: url(https://www.princeton.edu/sites/default/files/styles/full_2x_crop/public/images/2025/02/20250222_AlumniDay_022225_1016_WEB_2.jpeg?itok=lgpdqeSw);
   }
   .bg-cover {
     background-size: cover;
